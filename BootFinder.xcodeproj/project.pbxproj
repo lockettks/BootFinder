@@ -9,19 +9,52 @@
 /* Begin PBXBuildFile section */
 		95BDD6B22231D9970076D23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BDD6B12231D9970076D23E /* AppDelegate.swift */; };
 		95BDD6B42231D9970076D23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BDD6B32231D9970076D23E /* ViewController.swift */; };
-		95BDD6B72231D9970076D23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BDD6B52231D9970076D23E /* Main.storyboard */; };
 		95BDD6B92231D9980076D23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BDD6B82231D9980076D23E /* Assets.xcassets */; };
 		95BDD6BC2231D9980076D23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BDD6BA2231D9980076D23E /* LaunchScreen.storyboard */; };
+		95BDD6C42231D9D10076D23E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95BDD6C32231D9D10076D23E /* Podfile */; };
+		95BDD6C62231DAB30076D23E /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BDD6C52231DAB20076D23E /* CoreML.framework */; };
+		95EDE90222330D58007BFCF2 /* imagesimilarity-1547487985725.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 95EDE90122330D58007BFCF2 /* imagesimilarity-1547487985725.mlmodel */; };
+		95EDE904223317DD007BFCF2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 95EDE903223317DD007BFCF2 /* .gitignore */; };
+		95EDE90A22331E9B007BFCF2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EDE90922331E9B007BFCF2 /* Storyboard.storyboard */; };
+		D1D9BBECCE1CA1A02CB1F161 /* Pods_BootFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B561017D598C41232565C5B /* Pods_BootFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22F7B507E0F8763E897D21C3 /* Pods-BootFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootFinder.debug.xcconfig"; path = "Target Support Files/Pods-BootFinder/Pods-BootFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		6B561017D598C41232565C5B /* Pods_BootFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BDD6AE2231D9970076D23E /* BootFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BDD6B12231D9970076D23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BDD6B32231D9970076D23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		95BDD6B62231D9970076D23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95BDD6B82231D9980076D23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BDD6BB2231D9980076D23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		95BDD6BD2231D9980076D23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BDD6C32231D9D10076D23E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95BDD6C52231DAB20076D23E /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		95BDD6C922320E650076D23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95BDD6CA22320E650076D23E /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		95BDD6CB22320E650076D23E /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		95BDD6CC22320E650076D23E /* boot-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boot-placeholder.jpg"; sourceTree = "<group>"; };
+		95BDD6CF22320E650076D23E /* bg pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg pattern.png"; sourceTree = "<group>"; };
+		95BDD6D022320E650076D23E /* imageGalleryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageGalleryIcon.png; sourceTree = "<group>"; };
+		95BDD6D122320E650076D23E /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
+		95BDD6D222320E650076D23E /* Boot Finder logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boot Finder logo1.png"; sourceTree = "<group>"; };
+		95BDD6D322320E650076D23E /* takePhotoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takePhotoIcon.png; sourceTree = "<group>"; };
+		95BDD6D522320EBD0076D23E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		95BDD6D622320EBD0076D23E /* ImageClassification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageClassification.entitlements; sourceTree = "<group>"; };
+		95BDD6D722320EBD0076D23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BDD6DC22320F320076D23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95BDD6DD22320F320076D23E /* BootResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootResult.swift; sourceTree = "<group>"; };
+		95BDD6DE22320F330076D23E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		95BDD6DF22320F330076D23E /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		95BDD6E022320F330076D23E /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		95BDD6E122320F330076D23E /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		95BDD6E222320F330076D23E /* AllMetadata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AllMetadata.json; sourceTree = "<group>"; };
+		95BDD6E322320F330076D23E /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		95BDD6E422320F330076D23E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		95BDD6E52233036D0076D23E /* BootFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BootFinder.entitlements; sourceTree = "<group>"; };
+		95EDE90122330D58007BFCF2 /* imagesimilarity-1547487985725.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "imagesimilarity-1547487985725.mlmodel"; sourceTree = "<group>"; };
+		95EDE903223317DD007BFCF2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		95EDE90922331E9B007BFCF2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C70A5361B4652304CC8728D4 /* Pods-BootFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootFinder.release.xcconfig"; path = "Target Support Files/Pods-BootFinder/Pods-BootFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BDD6C62231DAB30076D23E /* CoreML.framework in Frameworks */,
+				D1D9BBECCE1CA1A02CB1F161 /* Pods_BootFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3083D9C80E2F03DCD1D11741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22F7B507E0F8763E897D21C3 /* Pods-BootFinder.debug.xcconfig */,
+				C70A5361B4652304CC8728D4 /* Pods-BootFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95BDD6A52231D9970076D23E = {
 			isa = PBXGroup;
 			children = (
+				95EDE903223317DD007BFCF2 /* .gitignore */,
+				95EDE90122330D58007BFCF2 /* imagesimilarity-1547487985725.mlmodel */,
+				95EDE90922331E9B007BFCF2 /* Storyboard.storyboard */,
+				95BDD6D722320EBD0076D23E /* Info.plist */,
+				95BDD6DA22320F320076D23E /* Components */,
+				95BDD6D822320EF60076D23E /* App */,
+				95BDD6D422320EBD0076D23E /* Support */,
+				95BDD6C822320E650076D23E /* Resources */,
+				95BDD6C32231D9D10076D23E /* Podfile */,
 				95BDD6B02231D9970076D23E /* BootFinder */,
 				95BDD6AF2231D9970076D23E /* Products */,
+				3083D9C80E2F03DCD1D11741 /* Pods */,
+				9F39610FBC77E3888A608925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +109,70 @@
 		95BDD6B02231D9970076D23E /* BootFinder */ = {
 			isa = PBXGroup;
 			children = (
-				95BDD6B12231D9970076D23E /* AppDelegate.swift */,
+				95BDD6E52233036D0076D23E /* BootFinder.entitlements */,
 				95BDD6B32231D9970076D23E /* ViewController.swift */,
-				95BDD6B52231D9970076D23E /* Main.storyboard */,
 				95BDD6B82231D9980076D23E /* Assets.xcassets */,
 				95BDD6BA2231D9980076D23E /* LaunchScreen.storyboard */,
-				95BDD6BD2231D9980076D23E /* Info.plist */,
 			);
 			path = BootFinder;
+			sourceTree = "<group>";
+		};
+		95BDD6C822320E650076D23E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95BDD6C922320E650076D23E /* Assets.xcassets */,
+				95BDD6CA22320E650076D23E /* Rectangle.png */,
+				95BDD6CB22320E650076D23E /* camera-icon.png */,
+				95BDD6CC22320E650076D23E /* boot-placeholder.jpg */,
+				95BDD6CF22320E650076D23E /* bg pattern.png */,
+				95BDD6D022320E650076D23E /* imageGalleryIcon.png */,
+				95BDD6D122320E650076D23E /* cameraIcon.png */,
+				95BDD6D222320E650076D23E /* Boot Finder logo1.png */,
+				95BDD6D322320E650076D23E /* takePhotoIcon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95BDD6D422320EBD0076D23E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				95BDD6D522320EBD0076D23E /* UIImage+Extension.swift */,
+				95BDD6D622320EBD0076D23E /* ImageClassification.entitlements */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		95BDD6D822320EF60076D23E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				95BDD6B12231D9970076D23E /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		95BDD6DA22320F320076D23E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95BDD6DC22320F320076D23E /* ViewController.swift */,
+				95BDD6DD22320F320076D23E /* BootResult.swift */,
+				95BDD6DE22320F330076D23E /* MainViewController.swift */,
+				95BDD6DF22320F330076D23E /* ResultsViewController.swift */,
+				95BDD6E022320F330076D23E /* InitialViewController.swift */,
+				95BDD6E122320F330076D23E /* ResultTableViewCell.swift */,
+				95BDD6E222320F330076D23E /* AllMetadata.json */,
+				95BDD6E322320F330076D23E /* BuyViewController.swift */,
+				95BDD6E422320F330076D23E /* DetailsViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9F39610FBC77E3888A608925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BDD6C52231DAB20076D23E /* CoreML.framework */,
+				6B561017D598C41232565C5B /* Pods_BootFinder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95BDD6C02231D9980076D23E /* Build configuration list for PBXNativeTarget "BootFinder" */;
 			buildPhases = (
+				62DB844FF8A0CEF6911BB01A /* [CP] Check Pods Manifest.lock */,
 				95BDD6AA2231D9970076D23E /* Sources */,
 				95BDD6AB2231D9970076D23E /* Frameworks */,
 				95BDD6AC2231D9970076D23E /* Resources */,
+				A79771A38E0E7F7501F222A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +209,14 @@
 				TargetAttributes = {
 					95BDD6AD2231D9970076D23E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,13 +243,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EDE904223317DD007BFCF2 /* .gitignore in Resources */,
 				95BDD6BC2231D9980076D23E /* LaunchScreen.storyboard in Resources */,
 				95BDD6B92231D9980076D23E /* Assets.xcassets in Resources */,
-				95BDD6B72231D9970076D23E /* Main.storyboard in Resources */,
+				95BDD6C42231D9D10076D23E /* Podfile in Resources */,
+				95EDE90A22331E9B007BFCF2 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62DB844FF8A0CEF6911BB01A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BootFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A79771A38E0E7F7501F222A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BootFinder/Pods-BootFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${PODS_ROOT}/Skafos/frameworks/Skafos.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skafos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BootFinder/Pods-BootFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95BDD6AA2231D9970076D23E /* Sources */ = {
@@ -137,20 +315,13 @@
 			files = (
 				95BDD6B42231D9970076D23E /* ViewController.swift in Sources */,
 				95BDD6B22231D9970076D23E /* AppDelegate.swift in Sources */,
+				95EDE90222330D58007BFCF2 /* imagesimilarity-1547487985725.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		95BDD6B52231D9970076D23E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95BDD6B62231D9970076D23E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		95BDD6BA2231D9980076D23E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +451,14 @@
 		};
 		95BDD6C12231D9980076D23E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F7B507E0F8763E897D21C3 /* Pods-BootFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BootFinder/BootFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW8RH4DBAM;
-				INFOPLIST_FILE = BootFinder/Info.plist;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +466,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KimMathieu.BootFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		95BDD6C22231D9980076D23E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70A5361B4652304CC8728D4 /* Pods-BootFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BootFinder/BootFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW8RH4DBAM;
-				INFOPLIST_FILE = BootFinder/Info.plist;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KimMathieu.BootFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

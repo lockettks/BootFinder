@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ynl-YB-rkG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Boot Finder logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="NTw-B3-s9k">
+                                <rect key="frame" x="67" y="185" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jnk-PJ-l02"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LoadingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4up-7b-Iy0">
+                                <rect key="frame" x="67" y="335" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ynl-YB-rkG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="27r-F6-oB3"/>
+                            <constraint firstItem="NTw-B3-s9k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="IDB-Gm-zPi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4up-7b-Iy0" secondAttribute="bottom" constant="204" id="MXn-NW-qtX"/>
+                            <constraint firstItem="ynl-YB-rkG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="PcV-jX-qsX"/>
+                            <constraint firstAttribute="trailing" secondItem="ynl-YB-rkG" secondAttribute="trailing" id="Thj-LL-XhJ"/>
+                            <constraint firstItem="ynl-YB-rkG" firstAttribute="centerX" secondItem="4up-7b-Iy0" secondAttribute="centerX" id="TvU-FN-rpY"/>
+                            <constraint firstItem="4up-7b-Iy0" firstAttribute="top" secondItem="NTw-B3-s9k" secondAttribute="bottom" constant="22" id="bun-Lz-a3R"/>
+                            <constraint firstItem="NTw-B3-s9k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="eX6-HJ-rSW"/>
+                            <constraint firstItem="ynl-YB-rkG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="q02-rn-mGh"/>
+                            <constraint firstItem="NTw-B3-s9k" firstAttribute="trailing" secondItem="4up-7b-Iy0" secondAttribute="trailing" id="q2d-5D-RSG"/>
+                            <constraint firstItem="NTw-B3-s9k" firstAttribute="leading" secondItem="4up-7b-Iy0" secondAttribute="leading" id="zOI-hU-GzT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boot Finder logo1.png" width="322" height="81"/>
+        <image name="LoadingIcon" width="194" height="194"/>
+        <image name="bg pattern" width="411" height="736"/>
+    </resources>
+</document>
