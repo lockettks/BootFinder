@@ -82,8 +82,8 @@
 		959BFA63223485A900AE4E47 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				95BDD6BA2231D9980076D23E /* LaunchScreen.storyboard */,
 				95EDE90922331E9B007BFCF2 /* Storyboard.storyboard */,
+				95BDD6BA2231D9980076D23E /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -118,6 +118,14 @@
 		95BDD6B02231D9970076D23E /* BootFinder */ = {
 			isa = PBXGroup;
 			children = (
+				95BDD6D322320E650076D23E /* takePhotoIcon.png */,
+				95BDD6D122320E650076D23E /* cameraIcon.png */,
+				95BDD6D022320E650076D23E /* imageGalleryIcon.png */,
+				95BDD6D222320E650076D23E /* Boot Finder logo1.png */,
+				95BDD6CC22320E650076D23E /* boot-placeholder.jpg */,
+				95BDD6CB22320E650076D23E /* camera-icon.png */,
+				95BDD6CF22320E650076D23E /* bg pattern.png */,
+				95BDD6CA22320E650076D23E /* Rectangle.png */,
 				95BDD6E52233036D0076D23E /* BootFinder.entitlements */,
 				95BDD6B32231D9970076D23E /* ViewController.swift */,
 				95BDD6B82231D9980076D23E /* Assets.xcassets */,
@@ -129,14 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				95BDD6C922320E650076D23E /* Assets.xcassets */,
-				95BDD6CA22320E650076D23E /* Rectangle.png */,
-				95BDD6CB22320E650076D23E /* camera-icon.png */,
-				95BDD6CC22320E650076D23E /* boot-placeholder.jpg */,
-				95BDD6CF22320E650076D23E /* bg pattern.png */,
-				95BDD6D022320E650076D23E /* imageGalleryIcon.png */,
-				95BDD6D122320E650076D23E /* cameraIcon.png */,
-				95BDD6D222320E650076D23E /* Boot Finder logo1.png */,
-				95BDD6D322320E650076D23E /* takePhotoIcon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
