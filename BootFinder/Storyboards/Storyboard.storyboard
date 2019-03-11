@@ -107,9 +107,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" backgroundImage="Rectangle.png"/>
-                                <connections>
-                                    <action selector="camera:" destination="D7o-SQ-Eud" eventType="touchUpInside" id="vdZ-Yd-87b"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTM-0E-jGq">
                                 <rect key="frame" x="111" y="513" width="153" height="33"/>
@@ -130,9 +127,6 @@
                                 <state key="normal" backgroundImage="Rectangle.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="photoLibrary:" destination="D7o-SQ-Eud" eventType="touchUpInside" id="JWb-wB-jQs"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTO LIBRARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5Z-ve-GP8">
                                 <rect key="frame" x="111" y="405" width="153" height="33"/>
