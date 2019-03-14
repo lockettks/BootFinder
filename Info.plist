@@ -28,7 +28,7 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) needs access to your camera</string>
+	<string>$(PRODUCT_NAME) needs access to your camera to help you find some boots!</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>lemme her.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
