@@ -21,6 +21,10 @@ class ResultsViewController: UIViewController {
         resultsTable.dataSource = self
         resultsTable.delegate = self
     }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
