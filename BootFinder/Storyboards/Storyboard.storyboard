@@ -213,7 +213,7 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zQy-PS-OWO">
                                 <rect key="frame" x="0.0" y="297" width="375" height="370"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="zWg-4I-ndS" id="jMq-0C-bZk"/>
                                     <outlet property="delegate" destination="zWg-4I-ndS" id="wAA-gk-4gm"/>
@@ -267,8 +267,8 @@
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="xnU-ni-KJf">
                                 <rect key="frame" x="0.0" y="-46" width="375" height="759"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-7e-nLp">
-                                <rect key="frame" x="0.0" y="13" width="375" height="436"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-7e-nLp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="429"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxc-WY-NkU" userLabel="Buy Button">
                                 <rect key="frame" x="242" y="581" width="117" height="48"/>
@@ -337,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jf2-2o-xn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2102" y="242"/>
+            <point key="canvasLocation" x="2101.5999999999999" y="241.52923538230885"/>
         </scene>
         <!--Buy View Controller-->
         <scene sceneID="YKk-6n-Xuk">

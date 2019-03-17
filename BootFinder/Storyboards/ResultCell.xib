@@ -45,16 +45,16 @@
                             <action selector="buyPressed:" destination="VcX-re-Nct" eventType="touchUpInside" id="JWT-uX-vtz"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5A-4h-qGF" userLabel="BUY Label">
-                        <rect key="frame" x="284" y="31" width="34" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-P9-9rf">
                         <rect key="frame" x="107" y="28.5" width="128" height="46.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5A-4h-qGF" userLabel="BUY Label">
+                        <rect key="frame" x="284" y="26" width="34" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -64,6 +64,7 @@
                     <constraint firstItem="SNU-zQ-VXw" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="19" id="Aq4-A1-RD2"/>
                     <constraint firstAttribute="bottomMargin" secondItem="SNU-zQ-VXw" secondAttribute="bottom" constant="43" id="Fve-Mw-JJC"/>
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" constant="17" id="JOS-1A-EKc"/>
+                    <constraint firstItem="c5A-4h-qGF" firstAttribute="top" secondItem="B07-xS-8ty" secondAttribute="top" constant="7.5" id="MpI-zZ-iaG"/>
                     <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="QF1-51-hsk"/>
                     <constraint firstItem="B07-xS-8ty" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="XTM-6h-Tkr"/>
                     <constraint firstItem="B07-xS-8ty" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" constant="8" id="dzp-xW-wfN"/>
