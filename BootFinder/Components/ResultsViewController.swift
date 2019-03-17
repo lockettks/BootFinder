@@ -15,6 +15,7 @@ class ResultsViewController: UIViewController {
     var rawResults : ArraySlice<(offset: Int, element: Double)>?
     var bootResults = [BootResult]()
     var bootImage = UIImage(named: "boot-placeholder.jpg")
+    var selectedBoot: BootResult?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +34,18 @@ class ResultsViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedBoot = selectedBoot {
+            if segue.identifier == "detailsSegue" {
+                if let vc = segue.destination as? DetailsViewController {
+                    vc.configureWithModel(selectedBoot: selectedBoot)
+                }
+            }
+        }
+    }
+    
     
 }
 
@@ -66,5 +70,8 @@ extension ResultsViewController: UITableViewDataSource {
 }
 
 extension ResultsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailsSegue", sender: self)
+    }
     
 }
