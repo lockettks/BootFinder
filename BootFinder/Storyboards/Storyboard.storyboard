@@ -202,8 +202,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="noe-4f-gQz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="noe-4f-gQz">
+                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-7D-FJp">
                                 <rect key="frame" x="0.0" y="64" width="375" height="233"/>
@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="height" constant="233" id="ulF-XO-Pq2"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zQy-PS-OWO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zQy-PS-OWO">
                                 <rect key="frame" x="0.0" y="317" width="375" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -222,17 +222,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="top" secondItem="yvo-kO-23M" secondAttribute="top" id="2Po-Lp-p5b"/>
-                            <constraint firstAttribute="trailing" secondItem="noe-4f-gQz" secondAttribute="trailing" id="EBN-AH-34I"/>
+                            <constraint firstItem="wmc-7D-FJp" firstAttribute="width" secondItem="yvo-kO-23M" secondAttribute="width" id="2cP-eq-DAK"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="trailing" secondItem="yvo-kO-23M" secondAttribute="trailing" id="3ZJ-g4-PtO"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="bottom" secondItem="yvo-kO-23M" secondAttribute="bottom" id="4VI-VC-eYn"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="top" secondItem="liH-gH-YiH" secondAttribute="top" constant="32" id="84D-nc-rZr"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="height" secondItem="yvo-kO-23M" secondAttribute="height" id="BZL-l9-gEh"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="leading" secondItem="yvo-kO-23M" secondAttribute="leading" id="Fcb-9S-eEB"/>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="leading" secondItem="zQy-PS-OWO" secondAttribute="leading" id="HAR-kG-ZLg"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="width" secondItem="yvo-kO-23M" secondAttribute="width" id="K6i-xc-8eJ"/>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="top" secondItem="yvo-kO-23M" secondAttribute="top" id="Kk1-7v-vZL"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="trailing" secondItem="yvo-kO-23M" secondAttribute="trailing" id="Vwx-X6-KaM"/>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="leading" secondItem="liH-gH-YiH" secondAttribute="leading" id="XKd-3z-kVW"/>
-                            <constraint firstItem="wmc-7D-FJp" firstAttribute="trailing" secondItem="noe-4f-gQz" secondAttribute="trailing" id="aBv-xd-tnF"/>
+                            <constraint firstItem="yvo-kO-23M" firstAttribute="bottom" secondItem="noe-4f-gQz" secondAttribute="bottom" constant="32" id="Ys1-tB-0nI"/>
                             <constraint firstItem="zQy-PS-OWO" firstAttribute="top" secondItem="wmc-7D-FJp" secondAttribute="bottom" constant="20" id="b46-HF-PKe"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="bottom" secondItem="yvo-kO-23M" secondAttribute="bottom" id="g4d-XY-gHg"/>
-                            <constraint firstItem="wmc-7D-FJp" firstAttribute="leading" secondItem="noe-4f-gQz" secondAttribute="leading" id="kcS-lR-yNw"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="trailing" secondItem="zQy-PS-OWO" secondAttribute="trailing" id="rnM-UQ-n8Y"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="bottom" secondItem="zQy-PS-OWO" secondAttribute="bottom" id="vte-YJ-kk3"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="width" secondItem="yvo-kO-23M" secondAttribute="width" id="kHA-hR-P53"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="leading" secondItem="yvo-kO-23M" secondAttribute="leading" id="qGj-5G-EUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvo-kO-23M"/>
                     </view>
