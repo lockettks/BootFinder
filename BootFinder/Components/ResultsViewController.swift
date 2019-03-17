@@ -20,6 +20,12 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
         resultsTable.dataSource = self
         resultsTable.delegate = self
+        
+        
+        let nib = UINib(nibName: "ResultCell", bundle: nil)
+        
+        resultsTable.register(nib, forCellReuseIdentifier: "cell")
+
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
