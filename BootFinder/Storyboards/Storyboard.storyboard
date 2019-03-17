@@ -248,8 +248,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bootImageView" destination="wmc-7D-FJp" id="uot-4v-bwP"/>
                         <outlet property="resultsTable" destination="zQy-PS-OWO" id="6nc-WD-37t"/>
-                        <outlet property="sampleBoot" destination="wmc-7D-FJp" id="x1Z-8f-SCQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9a2-Ar-Pha" userLabel="First Responder" sceneMemberID="firstResponder"/>

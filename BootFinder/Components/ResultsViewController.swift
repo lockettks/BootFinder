@@ -9,12 +9,12 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-    @IBOutlet var sampleBoot: UIImageView!
+    @IBOutlet var bootImageView: UIImageView!
     @IBOutlet var resultsTable: UITableView!
     
     var rawResults : ArraySlice<(offset: Int, element: Double)>?
     var bootResults = [BootResult]()
-    
+    var bootImage = UIImage(named: "boot-placeholder.jpg")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +25,24 @@ class ResultsViewController: UIViewController {
         let nib = UINib(nibName: "ResultCell", bundle: nil)
         
         resultsTable.register(nib, forCellReuseIdentifier: "cell")
-
+        bootImageView.image = bootImage
+        
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension ResultsViewController: UITableViewDataSource {

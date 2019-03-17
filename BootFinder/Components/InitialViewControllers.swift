@@ -23,7 +23,7 @@ class InitialViewController: UIViewController {
     
     
     private var currentImage:UIImage!             = nil
-
+    
     @IBAction func photoLibrary(_ sender: Any) {
         let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
@@ -39,7 +39,7 @@ class InitialViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Load Model From Download Cache
         Skafos.load(asset: self.assetName) { (error, asset) in
             guard let model = asset.model else {
@@ -158,18 +158,18 @@ class InitialViewController: UIViewController {
     
     func getMetaData(topResults: ArraySlice<(offset: Int, element: Double)>){
         
-//        topResults.forEach {
-//            var result : BootResult
-////            result.description = metaData[$0.offset - 1]["Description"]
-//            let test = metaData[$0.offset - 1]["Description"]
-////            let result = "Element: \($0.element)  Offset: \($0.offset)\n"
-////            bootResults.append(result)
-//        }
+        //        topResults.forEach {
+        //            var result : BootResult
+        ////            result.description = metaData[$0.offset - 1]["Description"]
+        //            let test = metaData[$0.offset - 1]["Description"]
+        ////            let result = "Element: \($0.element)  Offset: \($0.offset)\n"
+        ////            bootResults.append(result)
+        //        }
         
         for (index, element) in topResults.enumerated() {
             var result = BootResult()
-//            let test = metaData[element.offset - 1]
-//            print(test)
+            //            let test = metaData[element.offset - 1]
+            //            print(test)
             result.description = metaData[element.offset - 1]["Description"].stringValue
             result.imageURL = metaData[element.offset - 1]["thumb_image"].stringValue
             result.price = metaData[element.offset - 1]["price"].stringValue
@@ -216,14 +216,14 @@ class InitialViewController: UIViewController {
         let action = UIAlertAction(title: "OK", style: .default) { (actionitem) in
             if let imagePicker = (self.presentedViewController as? UIImagePickerController) {
                 if (imagePicker.sourceType == .camera) {
-                                        self.dismiss(animated: false, completion: {
-                                            self.performSegue(withIdentifier: "resultsSegue", sender: self)
-//                                            self.doTheSegue()
-                    
-//                    let storyBoard: UIStoryboard = UIStoryboard(name: "Storyboard", bundle: nil)
-//                    let vc = storyBoard.instantiateViewController(withIdentifier: "nvc") as! UINavigationController
-//                    self.present(vc, animated: true, completion: nil)
-                                        })
+                    self.dismiss(animated: false, completion: {
+                        self.performSegue(withIdentifier: "resultsSegue", sender: self)
+                        //                                            self.doTheSegue()
+                        
+                        //                    let storyBoard: UIStoryboard = UIStoryboard(name: "Storyboard", bundle: nil)
+                        //                    let vc = storyBoard.instantiateViewController(withIdentifier: "nvc") as! UINavigationController
+                        //                    self.present(vc, animated: true, completion: nil)
+                    })
                 }
             }
         }
@@ -247,14 +247,12 @@ class InitialViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "resultsSegue" {
-        
-            let vc = segue.destination as! ResultsViewController
-//        vc.sampleBoot.image = self.currentImage
-        vc.bootResults = self.bootResults
-        
-//            vc.sampleBoot.image = self.currentImage
-//        }
+        if segue.identifier == "resultsSegue" {
+            if let vc = segue.destination as? ResultsViewController {
+                vc.bootImage = self.currentImage
+                vc.bootResults = self.bootResults
+            }
+        }
     }
 }
 
