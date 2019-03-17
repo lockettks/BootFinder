@@ -18,10 +18,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="oiu-po-G5m">
-                        <rect key="frame" x="0.0" y="-272.5" width="375" height="627.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-zQ-VXw">
                         <rect key="frame" x="107" y="11.5" width="60" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -56,7 +52,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-P9-9rf">
-                        <rect key="frame" x="107" y="28.5" width="48" height="46.5"/>
+                        <rect key="frame" x="107" y="28.5" width="128" height="46.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -70,6 +66,7 @@
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" constant="17" id="JOS-1A-EKc"/>
                     <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="QF1-51-hsk"/>
                     <constraint firstItem="B07-xS-8ty" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="XTM-6h-Tkr"/>
+                    <constraint firstItem="B07-xS-8ty" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" constant="8" id="dzp-xW-wfN"/>
                     <constraint firstItem="B07-xS-8ty" firstAttribute="centerY" secondItem="XLY-Nx-CNe" secondAttribute="centerY" id="et1-xH-ypM"/>
                     <constraint firstItem="Csp-zo-t6T" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="10.5" id="fP9-lY-5AD"/>
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="19" id="hSm-JW-Vui"/>
@@ -88,6 +85,5 @@
     </objects>
     <resources>
         <image name="Rectangle.png" width="776" height="260"/>
-        <image name="bg pattern.png" width="411" height="736"/>
     </resources>
 </document>

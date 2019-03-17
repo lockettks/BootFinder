@@ -173,7 +173,7 @@ class InitialViewController: UIViewController {
             result.description = metaData[element.offset - 1]["Description"].stringValue
             result.imageURL = metaData[element.offset - 1]["thumb_image"].stringValue
             result.price = metaData[element.offset - 1]["price"].stringValue
-            result.price = metaData[element.offset - 1]["url"].stringValue
+            result.url = metaData[element.offset - 1]["url"].stringValue
             bootResults.append(result)
         }
     }
