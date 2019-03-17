@@ -53,6 +53,9 @@ extension ResultsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = resultsTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ResultTableViewCell {
             cell.configureWithItem(bootResult: bootResults[indexPath.row])
+            print("boot description: \(bootResults[indexPath.row].description)\n")
+            print(" price: \(bootResults[indexPath.row].price)\n")
+            print(" url: \(bootResults[indexPath.row].url)\n")
             
             return cell
         }

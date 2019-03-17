@@ -52,12 +52,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5A-4h-qGF" userLabel="BUY Label">
-                        <rect key="frame" x="284" y="26" width="34" height="26"/>
+                        <rect key="frame" x="284" y="26" width="34" height="25.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Csp-zo-t6T" secondAttribute="bottom" constant="10.5" id="5up-da-Pd1"/>
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="bottom" secondItem="XLY-Nx-CNe" secondAttribute="bottomMargin" id="6Z2-3S-g9R"/>
