@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ////
         // ADD THIS LINE. BE SURE TO PUT IN YOUR PUBLISHABLE KEY.
         ////
-        Skafos.configure("fd01aa56f737da034d9337aa:5f0b0c3de119ba549fb2c9e9bd8952e8:197")
+        Skafos.configure("b651d71134e086a2f7172a38:4272164d61d9a004c57ee4196255d5d9:209")
         
         return true
     }
