@@ -480,7 +480,7 @@
 		};
 		95BDD6C12231D9980076D23E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3734AB8BF7CE8F293CF06542 /* Pods-BootFinder.debug.xcconfig */;
+			baseConfigurationReference = 22F7B507E0F8763E897D21C3 /* Pods-BootFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BootFinder/BootFinder.entitlements;
