@@ -160,8 +160,8 @@
                             <constraint firstItem="noe-4f-gQz" firstAttribute="leading" secondItem="liH-gH-YiH" secondAttribute="leading" id="lWf-tn-uut"/>
                             <constraint firstItem="noe-4f-gQz" firstAttribute="centerY" secondItem="liH-gH-YiH" secondAttribute="centerY" id="oew-JJ-6L8"/>
                             <constraint firstItem="zQy-PS-OWO" firstAttribute="trailing" secondItem="yvo-kO-23M" secondAttribute="trailing" id="pxN-gG-ZHM"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="bottom" secondItem="yvo-kO-23M" secondAttribute="bottom" id="rem-59-EDU"/>
                             <constraint firstItem="zQy-PS-OWO" firstAttribute="top" secondItem="wmc-7D-FJp" secondAttribute="bottom" id="tou-GK-P29"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="bottom" secondItem="zQy-PS-OWO" secondAttribute="bottom" id="tyQ-8o-ERu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvo-kO-23M"/>
                     </view>
