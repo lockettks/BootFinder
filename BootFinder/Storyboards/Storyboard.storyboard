@@ -129,7 +129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="noe-4f-gQz">
-                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-7D-FJp">
                                 <rect key="frame" x="0.0" y="64" width="375" height="233"/>
@@ -149,16 +149,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="leading" secondItem="zQy-PS-OWO" secondAttribute="leading" id="1JN-1o-Uqs"/>
-                            <constraint firstItem="yvo-kO-23M" firstAttribute="bottom" secondItem="noe-4f-gQz" secondAttribute="bottom" constant="32" id="6F6-Xo-6Es"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="bottom" secondItem="yvo-kO-23M" secondAttribute="bottom" id="3O2-g4-AVN"/>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="top" secondItem="yvo-kO-23M" secondAttribute="top" id="9D6-NM-snJ"/>
                             <constraint firstAttribute="trailing" secondItem="noe-4f-gQz" secondAttribute="trailing" id="DZX-Ne-bfW"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="leading" secondItem="yvo-kO-23M" secondAttribute="leading" id="Eyh-hh-z5H"/>
                             <constraint firstItem="wmc-7D-FJp" firstAttribute="trailing" secondItem="zQy-PS-OWO" secondAttribute="trailing" id="HeO-Av-YfJ"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="trailing" secondItem="wmc-7D-FJp" secondAttribute="trailing" id="Mkj-YW-vAU"/>
-                            <constraint firstItem="noe-4f-gQz" firstAttribute="leading" secondItem="wmc-7D-FJp" secondAttribute="leading" id="Y9Y-52-dxQ"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="top" secondItem="liH-gH-YiH" secondAttribute="top" id="V9T-BW-Qq9"/>
                             <constraint firstItem="zQy-PS-OWO" firstAttribute="bottom" secondItem="yvo-kO-23M" secondAttribute="bottom" id="a6J-e8-5Hs"/>
                             <constraint firstItem="zQy-PS-OWO" firstAttribute="top" secondItem="wmc-7D-FJp" secondAttribute="bottom" id="b7C-Lh-cHG"/>
                             <constraint firstItem="noe-4f-gQz" firstAttribute="leading" secondItem="liH-gH-YiH" secondAttribute="leading" id="lWf-tn-uut"/>
                             <constraint firstItem="noe-4f-gQz" firstAttribute="centerY" secondItem="liH-gH-YiH" secondAttribute="centerY" id="oew-JJ-6L8"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="trailing" secondItem="yvo-kO-23M" secondAttribute="trailing" id="pxN-gG-ZHM"/>
+                            <constraint firstItem="zQy-PS-OWO" firstAttribute="top" secondItem="wmc-7D-FJp" secondAttribute="bottom" id="tou-GK-P29"/>
+                            <constraint firstItem="noe-4f-gQz" firstAttribute="bottom" secondItem="zQy-PS-OWO" secondAttribute="bottom" id="tyQ-8o-ERu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvo-kO-23M"/>
                     </view>
