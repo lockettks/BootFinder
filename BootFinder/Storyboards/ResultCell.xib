@@ -14,7 +14,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="112" id="VcX-re-Nct" customClass="ResultTableViewCell" customModule="BootFinder" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VcX-re-Nct" id="XLY-Nx-CNe">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VcX-re-Nct" id="XLY-Nx-CNe">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -41,13 +41,14 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="3r3-Lg-qdK"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="16" id="4yt-Po-TgX"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="8" id="8hD-Aq-IRb"/>
                     <constraint firstItem="SNU-zQ-VXw" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="IYj-5h-D8c"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="16" id="MzS-Xr-2m4"/>
                     <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="OWp-4e-1ru"/>
                     <constraint firstItem="Csp-zo-t6T" firstAttribute="centerY" secondItem="XLY-Nx-CNe" secondAttribute="centerY" id="Q9e-ee-qzD"/>
-                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="8" id="gjs-rs-CVB"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="40" id="d1U-S5-LtY"/>
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="bottom" secondItem="XLY-Nx-CNe" secondAttribute="bottomMargin" id="hq7-pV-clN"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="SNU-zQ-VXw" secondAttribute="bottom" constant="8" id="rW4-6K-DK0"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="115" id="nKE-BS-gJz"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
