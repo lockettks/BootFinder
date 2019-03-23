@@ -52,7 +52,7 @@
                     <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="115" id="nKE-BS-gJz"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="previewImage" destination="Csp-zo-t6T" id="6gw-Wd-f3V"/>

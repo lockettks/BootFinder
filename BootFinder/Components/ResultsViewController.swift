@@ -71,6 +71,7 @@ extension ResultsViewController: UITableViewDataSource {
 
 extension ResultsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedBoot = bootResults[indexPath.row]
         performSegue(withIdentifier: "detailsSegue", sender: self)
     }
     

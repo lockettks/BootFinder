@@ -19,14 +19,15 @@ class DetailsViewController: UIViewController {
     var bootPrice = ""
     var bootUrl = ""
     
-    private var selectedBoot = BootResult() {
-        didSet {
-            bootImageView.image = selectedBoot.image
-            bootPriceLabel.text = selectedBoot.price
-            bootDescriptionLabel.text = selectedBoot.description
-        }
-    }
+    private var selectedBoot = BootResult()
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let url = URL(string: selectedBoot.imageURL) {
+            bootImageView.load(url: url)
+        }
+        bootPriceLabel.text = selectedBoot.price
+        bootDescriptionLabel.text = selectedBoot.description
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
