@@ -182,9 +182,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="xnU-ni-KJf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-7e-nLp">
                                 <rect key="frame" x="0.0" y="64" width="375" height="385"/>
                             </imageView>
@@ -224,10 +221,8 @@
                             <constraint firstItem="yxc-WY-NkU" firstAttribute="leading" secondItem="pu8-qL-XLb" secondAttribute="trailing" constant="16" id="68U-ie-Wpt"/>
                             <constraint firstItem="2Cu-7e-nLp" firstAttribute="leading" secondItem="PhV-We-SlG" secondAttribute="leading" id="AlA-kf-Ogq"/>
                             <constraint firstItem="2Cu-7e-nLp" firstAttribute="top" secondItem="PhV-We-SlG" secondAttribute="top" id="BzI-WT-SCa"/>
-                            <constraint firstItem="xnU-ni-KJf" firstAttribute="top" secondItem="gVY-s9-gSL" secondAttribute="top" id="C0e-Vz-Rhr"/>
                             <constraint firstItem="2Cu-7e-nLp" firstAttribute="trailing" secondItem="PhV-We-SlG" secondAttribute="trailing" id="DoB-74-acx"/>
                             <constraint firstItem="PhV-We-SlG" firstAttribute="trailing" secondItem="bw6-lV-2c4" secondAttribute="trailing" constant="26" id="Eqo-Ai-9SU"/>
-                            <constraint firstItem="xnU-ni-KJf" firstAttribute="leading" secondItem="PhV-We-SlG" secondAttribute="leading" id="FMX-i5-F7I"/>
                             <constraint firstItem="bw6-lV-2c4" firstAttribute="leading" secondItem="pu8-qL-XLb" secondAttribute="trailing" constant="56" id="Lxl-Ue-nVO"/>
                             <constraint firstItem="PhV-We-SlG" firstAttribute="bottom" secondItem="pu8-qL-XLb" secondAttribute="bottom" constant="20" id="Rqh-0Y-8hc"/>
                             <constraint firstItem="yxc-WY-NkU" firstAttribute="leading" secondItem="PhV-We-SlG" secondAttribute="leading" constant="242" id="aR7-nk-zqc"/>
@@ -236,9 +231,6 @@
                             <constraint firstItem="2Cu-7e-nLp" firstAttribute="width" secondItem="PhV-We-SlG" secondAttribute="width" id="mTA-6Y-Wfw"/>
                             <constraint firstItem="pu8-qL-XLb" firstAttribute="leading" secondItem="PhV-We-SlG" secondAttribute="leading" constant="29" id="ofD-Ch-rdx"/>
                             <constraint firstItem="bw6-lV-2c4" firstAttribute="top" secondItem="2Cu-7e-nLp" secondAttribute="bottom" constant="65" id="qcg-3l-GOc"/>
-                            <constraint firstItem="xnU-ni-KJf" firstAttribute="trailing" secondItem="PhV-We-SlG" secondAttribute="trailing" id="sDq-We-Scw"/>
-                            <constraint firstItem="xnU-ni-KJf" firstAttribute="width" secondItem="PhV-We-SlG" secondAttribute="width" id="stL-Dg-hgz"/>
-                            <constraint firstItem="xnU-ni-KJf" firstAttribute="height" secondItem="PhV-We-SlG" secondAttribute="height" constant="64" id="tP1-n2-OYr"/>
                             <constraint firstItem="pu8-qL-XLb" firstAttribute="top" secondItem="2Cu-7e-nLp" secondAttribute="bottom" constant="28" id="ut6-OF-ikG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PhV-We-SlG"/>
