@@ -1,14 +1,14 @@
 PODS:
-  - Alamofire (4.8.1)
-  - AlamofireImage (3.5.0):
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
-  - Skafos (2.5.0)
+  - Skafos (3.0.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - AlamofireImage
-  - Skafos (= 2.5.0)
+  - Skafos (= 3.0.0)
   - SnapKit (~> 4.0)
   - SwiftyJSON (~> 4.0)
 
@@ -21,12 +21,12 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
-  Skafos: 81a6a53dcfcb808a40f6a5ed716ebb43d25fe7b9
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Skafos: 28a2168cd307c8e4ba53500e6a95229bda377afb
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 4c108b76c619cf83d446183a6b911b011c383594
+PODFILE CHECKSUM: 77015518fe0efe756d3e2e6b6f53bd19e4739303
 
 COCOAPODS: 1.6.1

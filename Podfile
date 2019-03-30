@@ -6,7 +6,7 @@ target 'BootFinder' do
   use_frameworks!
 
   pod 'SnapKit', '~> 4.0'
-  pod 'Skafos', '2.5.0'
+  pod 'Skafos', '3.0.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'AlamofireImage'
 end
