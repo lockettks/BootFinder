@@ -215,7 +215,7 @@ class InitialViewController: UIViewController {
         
         let action = UIAlertAction(title: "OK", style: .default) { (actionitem) in
             if let imagePicker = (self.presentedViewController as? UIImagePickerController) {
-                if (imagePicker.sourceType == .camera) {
+//                if (imagePicker.sourceType == .camera) {
                     self.dismiss(animated: false, completion: {
                         self.performSegue(withIdentifier: "resultsSegue", sender: self)
                         //                                            self.doTheSegue()
@@ -224,12 +224,12 @@ class InitialViewController: UIViewController {
                         //                    let vc = storyBoard.instantiateViewController(withIdentifier: "nvc") as! UINavigationController
                         //                    self.present(vc, animated: true, completion: nil)
                     })
-                }
+//                }
             }
         }
         alertController.addAction(action)
         
-        // Save to Photo Library
+        // Provide option to save to Photo Library
         if let imagePicker = (self.presentedViewController as? UIImagePickerController) {
             if (imagePicker.sourceType == .camera) {
                 let saveAction = UIAlertAction(title: "Save Image", style: .default) { (actionitem) in
