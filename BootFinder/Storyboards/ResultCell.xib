@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="112" id="VcX-re-Nct" customClass="ResultTableViewCell" customModule="BootFinder" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="91" id="VcX-re-Nct" customClass="ResultTableViewCell" customModule="BootFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VcX-re-Nct" id="XLY-Nx-CNe">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Csp-zo-t6T">
-                        <rect key="frame" x="8" y="11" width="91" height="90"/>
+                        <rect key="frame" x="10" y="10" width="70" height="69.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="IbC-3l-dxo"/>
-                            <constraint firstAttribute="width" priority="500" constant="91" id="ieF-Ru-2Z4"/>
+                            <constraint firstAttribute="width" constant="70" id="qty-N7-8gL"/>
+                            <constraint firstAttribute="height" constant="69.5" id="ubk-al-r0j"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-P9-9rf">
-                        <rect key="frame" x="115" y="40" width="244" height="61"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-P9-9rf">
+                        <rect key="frame" x="90" y="11" width="195" height="68"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-zQ-VXw">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-zQ-VXw">
                         <rect key="frame" x="299" y="11" width="60" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.413497895" green="0.3891254663" blue="0.96612292529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,16 +40,15 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="3r3-Lg-qdK"/>
-                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="8" id="8hD-Aq-IRb"/>
-                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="IYj-5h-D8c"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="16" id="MzS-Xr-2m4"/>
-                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="OWp-4e-1ru"/>
-                    <constraint firstAttribute="bottom" secondItem="Csp-zo-t6T" secondAttribute="bottom" constant="10.5" id="TEN-bx-CCR"/>
-                    <constraint firstItem="Csp-zo-t6T" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="11" id="aoK-8N-W5q"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="40" id="d1U-S5-LtY"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="bottom" secondItem="XLY-Nx-CNe" secondAttribute="bottomMargin" id="hq7-pV-clN"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="115" id="nKE-BS-gJz"/>
+                    <constraint firstAttribute="bottom" secondItem="Csp-zo-t6T" secondAttribute="bottom" constant="10" id="0lW-XR-BDd"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="6FE-QA-xf2"/>
+                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="IwO-YY-Q6W"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="bottom" secondItem="XLY-Nx-CNe" secondAttribute="bottomMargin" id="WQ0-6T-tIM"/>
+                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="duF-2l-Qrq"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="10" id="dvn-Ca-Qm2"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="10" id="uEK-V7-OPz"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="10" id="xZp-0T-Mah"/>
+                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" constant="14" id="yod-al-3bY"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,7 +58,7 @@
                 <outlet property="price" destination="SNU-zQ-VXw" id="JPM-bg-aNA"/>
                 <outlet property="title" destination="DpC-P9-9rf" id="mrn-Cb-WD9"/>
             </connections>
-            <point key="canvasLocation" x="165.59999999999999" y="71.064467766116948"/>
+            <point key="canvasLocation" x="165.59999999999999" y="60.26986506746627"/>
         </tableViewCell>
     </objects>
 </document>
