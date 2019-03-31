@@ -25,7 +25,18 @@ class DetailsViewController: UIViewController {
         if let url = URL(string: selectedBoot.imageURL) {
             bootImageView.load(url: url)
         }
-        bootPriceLabel.text = selectedBoot.price
+        
+        //        let currencyFormatter = NumberFormatter()
+        //        currencyFormatter.usesGroupingSeparator = true
+        //        currencyFormatter.numberStyle = .currency
+        //        // localize to your grouping and decimal separator
+        //        currencyFormatter.locale = Locale.current
+        //
+        //        if let priceDoubled = Double(selectedBoot.price) {
+        //            let priceFormatted = currencyFormatter.string(from: NSNumber(value: priceDoubled))
+        
+        //            bootPriceLabel.text = priceFormatted
+        bootPriceLabel.text = selectedBoot.price.toCurrency()
         bootDescriptionLabel.text = selectedBoot.description
     }
     

@@ -24,7 +24,8 @@ class ResultTableViewCell: UITableViewCell {
     
     func configureWithItem(bootResult: BootResult) {
         title.text = bootResult.description
-        price.text = bootResult.price
+        price.text = bootResult.price.toCurrency()
+//        price.text = bootResult.price
         previewImage.image = UIImage(named: "boot-placeholder.jpg")
         if let url = URL(string: bootResult.imageURL) {
             previewImage.load(url: url)
