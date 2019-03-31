@@ -9,24 +9,36 @@
 import UIKit
 import WebKit
 
-class BuyViewController: UIViewController {
+class BuyViewController: UIViewController, WKNavigationDelegate {
 
-    @IBOutlet var BuyWebView: WKWebView!
+    @IBOutlet var buyWebView: WKWebView!
     
-    let webView = WKWebView()
+    var webView: WKWebView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL (string: "url here")
-        let requestObj = URLRequest(url: url!)
-        webView.load(requestObj)
-
-        // Do any additional setup after loading the view.
+        // 1
+        let url = URL(string: "https://ioscreator.com")!
+        webView.load(URLRequest(url: url))
+        
+        // 2
+        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        toolbarItems = [refresh]
+        navigationController?.isToolbarHidden = false
     }
     
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
+    }
 
     /*
     // MARK: - Navigation
