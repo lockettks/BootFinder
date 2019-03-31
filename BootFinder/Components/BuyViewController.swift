@@ -14,14 +14,17 @@ class BuyViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet var buyWebView: WKWebView!
     
     var webView: WKWebView!
+    var url = URL(string: "http://ioscreator.com")!
     
-    
+    func configureWithModel(bootUrl: URL) {
+        self.url = bootUrl
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 1
-        let url = URL(string: "https://ioscreator.com")!
+        
         webView.load(URLRequest(url: url))
         
         // 2
