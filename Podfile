@@ -9,5 +9,6 @@ target 'BootFinder' do
   pod 'Skafos', '3.0.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'AlamofireImage'
+  pod 'SwiftWebVC'
 end
 
