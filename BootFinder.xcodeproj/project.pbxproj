@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95364FC8225BD82500B1E623 /* star-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 95364FC6225BD82400B1E623 /* star-empty.png */; };
+		95364FC9225BD82500B1E623 /* star-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95364FC7225BD82400B1E623 /* star-yellow.png */; };
 		95A4AD4A223D8C8E00C25BB2 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A4AD49223D8C8E00C25BB2 /* ResultCell.xib */; };
 		95BDD6B22231D9970076D23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BDD6B12231D9970076D23E /* AppDelegate.swift */; };
 		95BDD6B92231D9980076D23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BDD6B82231D9980076D23E /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		22F7B507E0F8763E897D21C3 /* Pods-BootFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootFinder.debug.xcconfig"; path = "Target Support Files/Pods-BootFinder/Pods-BootFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		6B561017D598C41232565C5B /* Pods_BootFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95364FC6225BD82400B1E623 /* star-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-empty.png"; sourceTree = "<group>"; };
+		95364FC7225BD82400B1E623 /* star-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-yellow.png"; sourceTree = "<group>"; };
 		95A4AD49223D8C8E00C25BB2 /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
 		95BDD6AE2231D9970076D23E /* BootFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BDD6B12231D9970076D23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				95BDD6D222320E650076D23E /* Boot Finder logo1.png */,
 				95BDD6CC22320E650076D23E /* boot-placeholder.jpg */,
 				95BDD6CB22320E650076D23E /* camera-icon.png */,
+				95364FC6225BD82400B1E623 /* star-empty.png */,
+				95364FC7225BD82400B1E623 /* star-yellow.png */,
 				95BDD6CF22320E650076D23E /* bg pattern.png */,
 				95BDD6CA22320E650076D23E /* Rectangle.png */,
 				95BDD6E52233036D0076D23E /* BootFinder.entitlements */,
@@ -262,10 +268,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95364FC8225BD82500B1E623 /* star-empty.png in Resources */,
 				95EDE904223317DD007BFCF2 /* .gitignore in Resources */,
 				95BDD6BC2231D9980076D23E /* LaunchScreen.storyboard in Resources */,
 				95BDD6B92231D9980076D23E /* Assets.xcassets in Resources */,
 				95EDE90A22331E9B007BFCF2 /* Storyboard.storyboard in Resources */,
+				95364FC9225BD82500B1E623 /* star-yellow.png in Resources */,
 				95A4AD4A223D8C8E00C25BB2 /* ResultCell.xib in Resources */,
 				95C42EA322361B350021A1FF /* AllMetadata.json in Resources */,
 			);
@@ -309,7 +317,6 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${PODS_ROOT}/Skafos/frameworks/Skafos.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftWebVC/SwiftWebVC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -320,7 +327,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skafos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebVC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

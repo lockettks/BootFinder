@@ -13,8 +13,27 @@ class ResultTableViewCell: UITableViewCell {
     @IBOutlet var previewImage: UIImageView!
     @IBOutlet var title: UILabel!
     @IBOutlet var price: UILabel!
+    @IBOutlet var favoriteBtn: UIButton!
+    var emptyStar = UIImage(named: "star-empty.png")
+    var filledStar = UIImage(named: "star-yellow.png")
+    
+    var isFavorited = false
     
     @IBAction func buyPressed(_ sender: Any) {
+    }
+    @IBAction func favoriteBtnTouched(_ sender: Any) {
+        isFavorited = !isFavorited
+        setFavoriteIconImg()
+//        favoriteBtn.imageView = isFavorited ? favoriteBtn.setImage(emptyStar, for: .normal) : favoriteBtn.setImage(emptyStar, for: .normal)
+    }
+    
+    func setFavoriteIconImg(){
+        favoriteBtn.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        if (isFavorited) {
+            favoriteBtn.setImage(filledStar, for: .normal)
+        } else {
+            favoriteBtn.setImage(emptyStar, for: .normal)
+        }
     }
     
     override func awakeFromNib() {

@@ -20,40 +20,55 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Csp-zo-t6T">
                         <rect key="frame" x="10" y="10" width="70" height="69.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="70" id="qty-N7-8gL"/>
-                            <constraint firstAttribute="height" constant="69.5" id="ubk-al-r0j"/>
-                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-P9-9rf">
-                        <rect key="frame" x="90" y="11" width="195" height="68"/>
+                        <rect key="frame" x="90" y="11" width="195" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-zQ-VXw">
-                        <rect key="frame" x="299" y="11" width="60" height="21"/>
+                        <rect key="frame" x="299" y="58" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qVg-5G-O7m"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.413497895" green="0.3891254663" blue="0.96612292529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-CH-UUO">
+                        <rect key="frame" x="327" y="11" width="32" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="8Kp-hu-r0f"/>
+                            <constraint firstAttribute="height" constant="29" id="SIg-bN-NH7"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="star-empty.png"/>
+                        <connections>
+                            <action selector="favoriteBtnTouched:" destination="VcX-re-Nct" eventType="touchUpInside" id="P9D-ud-M5M"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Csp-zo-t6T" secondAttribute="bottom" constant="10" id="0lW-XR-BDd"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="6FE-QA-xf2"/>
-                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="IwO-YY-Q6W"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="bottom" secondItem="XLY-Nx-CNe" secondAttribute="bottomMargin" id="WQ0-6T-tIM"/>
-                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="duF-2l-Qrq"/>
-                    <constraint firstItem="Csp-zo-t6T" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="top" constant="10" id="dvn-Ca-Qm2"/>
-                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leading" constant="10" id="uEK-V7-OPz"/>
-                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="10" id="xZp-0T-Mah"/>
-                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" constant="14" id="yod-al-3bY"/>
+                    <constraint firstItem="kSL-CH-UUO" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" constant="42" id="6uR-7Z-Rs3"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="leading" secondItem="Csp-zo-t6T" secondAttribute="trailing" constant="10" id="7bp-bi-mcG"/>
+                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="top" secondItem="kSL-CH-UUO" secondAttribute="bottom" constant="18" id="Coi-79-GEA"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="leading" secondItem="XLY-Nx-CNe" secondAttribute="leadingMargin" constant="-6" id="Ip8-06-XLc"/>
+                    <constraint firstItem="kSL-CH-UUO" firstAttribute="trailing" secondItem="XLY-Nx-CNe" secondAttribute="trailingMargin" id="UnM-un-5tM"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="centerX" secondItem="XLY-Nx-CNe" secondAttribute="centerX" id="d2C-YO-Bbu"/>
+                    <constraint firstAttribute="trailing" secondItem="SNU-zQ-VXw" secondAttribute="trailing" constant="16" id="fke-Ax-HF3"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" id="i9h-ad-1fl"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="top" secondItem="XLY-Nx-CNe" secondAttribute="topMargin" constant="-1" id="iEA-n9-cXq"/>
+                    <constraint firstAttribute="bottom" secondItem="SNU-zQ-VXw" secondAttribute="bottom" priority="750" constant="10" id="nCe-bF-AUn"/>
+                    <constraint firstItem="Csp-zo-t6T" firstAttribute="centerY" secondItem="XLY-Nx-CNe" secondAttribute="centerY" id="q3y-30-B6V"/>
+                    <constraint firstItem="SNU-zQ-VXw" firstAttribute="leading" secondItem="DpC-P9-9rf" secondAttribute="trailing" priority="750" constant="14" id="sET-FU-ezr"/>
+                    <constraint firstItem="DpC-P9-9rf" firstAttribute="top" secondItem="kSL-CH-UUO" secondAttribute="top" id="xRJ-Wz-I2W"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="favoriteBtn" destination="kSL-CH-UUO" id="Lal-ss-82x"/>
                 <outlet property="previewImage" destination="Csp-zo-t6T" id="6gw-Wd-f3V"/>
                 <outlet property="price" destination="SNU-zQ-VXw" id="JPM-bg-aNA"/>
                 <outlet property="title" destination="DpC-P9-9rf" id="mrn-Cb-WD9"/>
@@ -61,4 +76,7 @@
             <point key="canvasLocation" x="165.59999999999999" y="60.26986506746627"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star-empty.png" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
 </document>

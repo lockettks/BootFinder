@@ -4,14 +4,12 @@ PODS:
     - Alamofire (~> 4.8)
   - Skafos (3.0.0)
   - SnapKit (4.2.0)
-  - SwiftWebVC (0.4.2)
-  - SwiftyJSON (4.2.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - Skafos (= 3.0.0)
   - SnapKit (~> 4.0)
-  - SwiftWebVC
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -20,7 +18,6 @@ SPEC REPOS:
     - AlamofireImage
     - Skafos
     - SnapKit
-    - SwiftWebVC
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -28,9 +25,8 @@ SPEC CHECKSUMS:
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   Skafos: 28a2168cd307c8e4ba53500e6a95229bda377afb
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftWebVC: ecc4feaabe5a3f75e059a0a345d3386bb0d16c44
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: c0dc4aa2116f4718f9fc1b3ea4ea7fccef34e798
+PODFILE CHECKSUM: 77015518fe0efe756d3e2e6b6f53bd19e4739303
 
 COCOAPODS: 1.6.1
