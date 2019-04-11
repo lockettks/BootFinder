@@ -26,7 +26,6 @@ class DetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let url = URL(string: selectedBoot.imageURL) {
-//            bootImageView.load(url: url)
             bootImageView.af_setImage(withURL: url, placeholderImage: self.placeholderImage)
         }
         
