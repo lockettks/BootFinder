@@ -7,7 +7,7 @@ PODS:
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - AlamofireImage
+  - AlamofireImage (~> 3.5)
   - Skafos (= 3.0.0)
   - SnapKit (~> 4.0)
   - SwiftyJSON (~> 4.0)
@@ -27,6 +27,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 77015518fe0efe756d3e2e6b6f53bd19e4739303
+PODFILE CHECKSUM: 0bd717eb1728fc7e68522f055db2f04f78562241
 
 COCOAPODS: 1.6.1

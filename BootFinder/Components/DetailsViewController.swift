@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class DetailsViewController: UIViewController {
     
@@ -15,6 +17,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet var bootDescriptionLabel: UILabel!
     
     var bootImage = UIImage()
+    var placeholderImage = UIImage(named: "boot-placeholder.jpg")
     var bootDescription = ""
     var bootPrice = ""
     var bootUrl = ""
@@ -23,7 +26,8 @@ class DetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let url = URL(string: selectedBoot.imageURL) {
-            bootImageView.load(url: url)
+//            bootImageView.load(url: url)
+            bootImageView.af_setImage(withURL: url, placeholderImage: self.placeholderImage)
         }
         
         //        let currencyFormatter = NumberFormatter()
@@ -42,7 +46,7 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bootImageView.image = UIImage(named: "boot-placeholder.jpg")
+        
     }
     
     func configureWithModel(selectedBoot: BootResult) {
