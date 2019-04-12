@@ -259,6 +259,11 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fk1-fs-4ia">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-7N-gDb">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
@@ -294,6 +299,7 @@
                     </view>
                     <connections>
                         <outlet property="BuyWebView" destination="qR5-O5-hPE" id="twU-mp-QOL"/>
+                        <outlet property="webViewPlaceholder" destination="Fk1-fs-4ia" id="hb1-Xh-8uN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiu-Gm-P2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
